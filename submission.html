@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block title %}SubmitPage!{% endblock %}
+{% block form %}
+<form method="post" class="needs-validation" novalidate xmlns="http://www.w3.org/1999/html">
+    <div class="col-md-4 mb-3">
+          <label for="validationCustomUsername">Book name</label>
+          <div class="input-group">
+            <input name="book" type="text" class="form-control" id="validationCustomUsername" placeholder="Bookname" aria-describedby="inputGroupPrepend" required>
+          </div>
+        </div>
+      <div class="form-row">
+        <div class="col-md-6 mb-3">
+          <label for="validationCustom03">Roll no</label>
+          <input name="roll" type="text" class="form-control" id="validationCustom03" placeholder="Roll no." required>
+        </div>
+          <div class="form-row"><br>
+      <button class="btn btn-primary" type="submit">Submit</button>
+</form>
+{% endblock %}
+

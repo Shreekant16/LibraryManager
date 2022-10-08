@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% block title %}TakenPage!{% endblock %}
+
+{% block form %}
+<form method="post" class="needs-validation" novalidate>
+  <div class="form-row">
+    <div class="col-md-4 mb-3">
+      <label for="validationCustom01">First name</label>
+      <input type="text" class="form-control" id="validationCustom01" placeholder="First name"  required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="validationCustom02">Last name</label>
+      <input type="text" class="form-control" id="validationCustom02" placeholder="Last name"  required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="validationCustomUsername">Book name</label>
+      <div class="input-group">
+        <input name="book" type="text" class="form-control" id="validationCustomUsername" placeholder="Bookname" aria-describedby="inputGroupPrepend" required>
+      </div>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label for="validationCustom03">Roll no</label>
+      <input name="roll" type="text" class="form-control" id="validationCustom03" placeholder="Roll no." required>
+    </div>
+      <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label for="validationCustom03">Date</label>
+      <input name="date" type="date" class="form-control"  placeholder="Date" required>
+    </div>
+  <button class="btn btn-primary" type="submit">Submit</button>
+</form>
+{% endblock %}
